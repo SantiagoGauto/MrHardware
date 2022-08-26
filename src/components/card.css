@@ -1,0 +1,30 @@
+.card:hover {
+    border: 1px solid #01f603;
+        box-shadow: 0 0 5px 4px #01f603;
+        padding: 0;
+        transition: .1s;
+    }
+    
+    .card-text {
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .overflow {
+        overflow: hidden;
+    }
+    
+    .card-img-top {
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .card-img-top:hover {
+        transform: scale(1.03);
+    }
+
+    .boton-pc {
+        --bs-btn-color: #16d731 !important;
+        --bs-btn-hover-bg: #8bb935 !important;
+        --bs-btn-bg: #000000a1 !important;
+    }
