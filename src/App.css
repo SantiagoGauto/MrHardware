@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px 15px
+}
+
+.flex-navbar {
+  display: flex;
+}
