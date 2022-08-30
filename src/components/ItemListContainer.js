@@ -1,39 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
+import "../css/card-menu.css";
 
-import "./card.css";
-
-function ItemListContainer({ imageSource, title, text, url }) {
+const ItemListContainer = (props) => {
     return (
-        <div className="card text-center bg-dark animate__animated animate__fadeInUp">
-        <div className="overflow">
-            <img src={imageSource} alt="a wallpaper" className="card-img-top" />
-        </div>
-        <div className="card-body text-light">
-            <h4 className="card-title">{title}</h4>
-            <p className="card-text text-secondary">
-            {text
-                ? text
-                : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. "}
-            </p>
-            <a
-            href={url ? url : "#!"}
-            target="_blank"
-            className="boton-pc btn btn-outline-secondary border-0"
-            rel="noreferrer"
-            >
-            {title}
-            </a>
-        </div>
-        </div>
-    );
+                    <div className="card card-menu">
+                        <img src={props.img} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">{props.carta}</h5>
+                                <p classNameName="card-text">{props.descripción}</p>
+                                <a href="#" className="btn btn-primary">{props.precio}</a>
+                            </div>
+                    </div>
+    )
 }
-
-ItemListContainer.propTypes = {
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string,
-    url: PropTypes.string,
-    imageSource: PropTypes.string
-};
 
 export default ItemListContainer;

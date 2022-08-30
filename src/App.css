@@ -23,3 +23,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 .flex-navbar {
   display: flex;
 }
+
+.fondo-menu {
+  background-color: #494949;
+}

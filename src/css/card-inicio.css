@@ -1,25 +1,25 @@
-.card:hover {
+.card-inicio:hover {
     border: 1px solid #01f603;
         box-shadow: 0 0 5px 4px #01f603;
         padding: 0;
         transition: .1s;
     }
     
-    .card-text {
+    .card-text-inicio {
         padding: 0.3rem 1rem;
         font-size: 1rem;
     }
     
-    .overflow {
+    .desbordamiento {
         overflow: hidden;
     }
     
-    .card-img-top {
+    .card-img-top-inicio {
         transform: scale(1);
         transition: all 0.2s ease-in-out;
     }
     
-    .card-img-top:hover {
+    .card-img-top-inicio:hover {
         transform: scale(1.03);
     }
 

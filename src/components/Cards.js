@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./ItemListContainer";
+import Card from "./CardInicio";
 
 import image1 from "../assets/pc1_1.jpg";
 import image2 from '../assets/pc2_1.jpg'
@@ -8,19 +8,19 @@ import image3 from '../assets/pc3_1.jpg'
 const cards = [
   {
     id: 1,
-    title: "Pc Común",
+    title: "Básico",
     image: image1,
     url: "#",
   },
   {
     id: 2,
-    title: "Pc Gamer",
+    title: "Workstation",
     image: image2,
     url: "#",
   },
   {
     id: 3,
-    title: "Pc Ultra Gamer",
+    title: "Gaming",
     image: image3,
     url: "#",
   },
