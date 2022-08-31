@@ -1,3 +1,24 @@
 .card-menu {
     width: 18rem;
 }
+
+.counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px !important;
+}
+
+.botón-precio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > .btn-group:not(:first-child) > .btn {
+    padding-left: 17px;
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    margin: 0px;
+}

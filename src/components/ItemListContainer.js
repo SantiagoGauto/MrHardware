@@ -1,4 +1,5 @@
 import "../css/card-menu.css";
+import ItemCount from "./ItemCount";
 
 const ItemListContainer = (props) => {
     return (
@@ -6,8 +7,9 @@ const ItemListContainer = (props) => {
                         <img src={props.img} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{props.carta}</h5>
-                                <p classNameName="card-text">{props.descripción}</p>
-                                <a href="#" className="btn btn-primary">{props.precio}</a>
+                                <p className="card-text">{props.descripción}</p>
+                                <ItemCount />
+                                <a href="#" className="btn btn-primary botón-precio">{props.precio}</a>
                             </div>
                     </div>
     )
