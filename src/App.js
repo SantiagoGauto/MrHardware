@@ -1,8 +1,8 @@
 import './App.css';
-import ItemListContainer from './components/ItemListContainer';
 import Cards from './components/Cards';
 import NavBar from './components/Navbar';
 import data from './components/data'
+import Cartas from './countainers/Cartas';
 
 const App = () => {
   return (
@@ -12,16 +12,7 @@ const App = () => {
       <Cards />
     </div>
     <div className="fondo-menu col d-flex justify-content-center">
-      {
-        data.map(item => (
-          <ItemListContainer
-          img={item.img}
-          carta={item.carta}
-          descripción={item.descripción}
-          precio={item.precio}
-          />
-        ))
-      }
+    <Cartas items={data} />
     </div>
     </>
   );
