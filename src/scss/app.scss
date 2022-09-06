@@ -1,0 +1,230 @@
+    .container {
+        margin: 0;
+        background: radial-gradient(circle, rgba(65,14,40,1) 0%, rgba(23,3,3,1) 74%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        max-width: 100% !important;
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        align-items: center;
+        -webkit-align-items: center;
+        align-content: center;
+        -webkit-align-content: center;
+    }
+    
+    .title {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 10px;
+        /* background:pink; */
+        width: 190px;
+        height: 20px;
+        font-family: Sans-serif;
+        font-weight: 100;
+        color: #8f0048;
+    }
+    
+    .grid-big {
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        align-content: center;
+        -webkit-align-content: center;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .grid-mini {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0px;
+        top: auto;
+        bottom: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        align-content: center;
+        -webkit-align-content: center;
+        width: 25px;
+        height: 35px;
+    }
+    
+    /****** LOADING GRID #1 ******/
+    .cell-1 {
+        width: 40px;
+        height: 40px;
+        background: #5c002e;
+        border-radius: 50%;
+        margin: 2px;
+        animation: quick-glow 1.25s 0.3s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.3s infinite linear;
+    }
+    
+    .cell-1:nth-child(7) {
+        animation: quick-glow 1.25s 0.15s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.15s infinite linear;
+    }
+    
+    .cell-1:nth-child(8) {
+        animation: quick-glow 1.25s 0.15s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.15s infinite linear;
+    }
+    
+    .cell-1:nth-child(9) {
+        animation: quick-glow 1.25s 0.15s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.15s infinite linear;
+    }
+    
+    .cell-1:nth-child(12) {
+        animation: quick-glow 1.25s 0.15s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.15s infinite linear;
+    }
+    
+    .cell-1:nth-child(14) {
+        animation: quick-glow 1.25s 0.15s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.15s infinite linear;
+    }
+    
+    .cell-1:nth-child(17) {
+        animation: quick-glow 1.25s 0.15s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.15s infinite linear;
+    }
+    
+    .cell-1:nth-child(18) {
+        animation: quick-glow 1.25s 0.15s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.15s infinite linear;
+    }
+    
+    .cell-1:nth-child(19) {
+        animation: quick-glow 1.25s 0.15s infinite linear;
+        -webkit-animation: quick-glow 1.25s 0.15s infinite linear;
+    }
+    
+    .cell-1:nth-child(13) {
+        animation: quick-glow 1.25s infinite linear;
+        -webkit-animation: quick-glow 1.25s infinite linear;
+    }
+    
+
+    /****** HEART ******/
+    .cell-mini {
+        width: 10px;
+        height: 10px;
+        background: #5c002e;
+        border-radius: 50%;
+        margin: 2px;
+        margin: 0;
+        width: 5px;
+        height: 5px;
+        background: #1D1F20;
+    }
+    
+    .cell-mini:nth-child(2) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(4) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(6) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(8) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(10) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(11) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(15) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(17) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(19) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+    .cell-mini:nth-child(23) {
+        background: #FF2995;
+        animation: glow 1.5s infinite linear;
+        -webkit-animation: glow 1.5s infinite linear;
+    }
+    
+  /****** KEYFRAME ANIMATIONS ******/
+    @keyframes quick-glow {
+        15% {
+        z-index: 99;
+        background: #FF2995;
+        box-shadow: 0 0 10px 2px #FF2995;
+        }
+    }
+    @keyframes glow {
+        50% {
+        z-index: 99;
+        background: #FF2995;
+        box-shadow: 0 0 10px 2px #FF2995;
+        }
+    }
+    @-webkit-keyframes quick-glow {
+        15% {
+        z-index: 99;
+        background: #FF2995;
+        box-shadow: 0 0 10px 2px #FF2995;
+        }
+    }
+    @-webkit-keyframes glow {
+        50% {
+        z-index: 99;
+        background: #FF2995;
+        box-shadow: 0 0 10px 2px #FF2995;
+        }
+    }

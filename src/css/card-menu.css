@@ -1,5 +1,70 @@
+.card {
+    margin: 10px;
+    color: #000000 !important;
+    text-align: justify !important;
+    --bs-card-title-spacer-y: 0 !important;
+    --bs-card-border-width: 0px !important;
+    text-decoration-line: none
+}
+
+.like {
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/develop/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+    margin-right: 8px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.like:hover {
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/develop/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.rating {
+    color: #ffc002;
+}
+
+.rgb::after {
+    content:"";
+    background: linear-gradient(45deg,
+    #ff0000 0%, 
+    #ff9a00 10%,
+    #d0de21 20%,
+    #4fdc4a 30%, 
+    #3fdad8 40%,
+    #2fc9e2 50%, 
+    #1c7fee 60%, 
+    #5f15f2 70%, 
+    #ba0cf8 80%, 
+    #fb07d9 90%, 
+    #ff0000 100%  )
+    repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    border-radius: 10px;
+    filter: blur(4px);
+    z-index: -1;
+    animation: rgb 6s linear infinite;
+}
+
+@keyframes rgb {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
 .card-menu {
     width: 18rem;
+}
+
+.display {
+    display: flex;
+    margin: 5px;
 }
 
 .counter {

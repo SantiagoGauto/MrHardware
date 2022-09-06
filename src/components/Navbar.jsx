@@ -1,10 +1,11 @@
 import CartWidget from "./CartWidget";
+import "../css/navbar.css"
 
 const NavBar = () => {
         return (
             <div>
                 <header>
-                <nav className="navbar navbar-dark bg-dark fixed-top">
+                <nav className="navbar navbar-dark fixed-top rgb-navbar">
                     <div className="container-fluid">
                             <a className="navbar-brand" href="#">MrHardware</a>
                             <div className="flex-navbar">
