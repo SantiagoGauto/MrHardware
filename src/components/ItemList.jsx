@@ -1,15 +1,15 @@
 import React from "react";
-import Item from "./Items";
+import Item from "./Item";
 import "../css/card-menu.css"
 
 function ItemList(props) {
 
-  let items = props.items;
+  let item = props.item;
 
 //llamado con props al PcListado
   return(
       <div className="display">
-          {items.map((item) => (
+          {item.map((item) => (
             <Item
               key={item.id}
               imageSrc={item.imageSrc}

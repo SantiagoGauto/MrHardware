@@ -12,11 +12,13 @@ function App() {
   return (
     <>
     <NavBar />
-      <main>
+    <main>
       {/* Route Components */}
       <Routes>
+        {/* ItemListContainer */}
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/category/:id" element={<ItemListContainer />} />
+        {/* ItemDetailContainer */}
         <Route path="/item/:id" element={<ItemDetailContainer />} />
       </Routes>
     </main>

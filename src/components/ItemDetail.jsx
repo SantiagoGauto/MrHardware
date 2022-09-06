@@ -7,7 +7,7 @@ function ItemDetail(props) {
       <div>
       {/* Parte Imágenes */}
           <div>
-            <img src={props.item.imageSrc} alt={props.item.imageAlt} className="" />
+            <img src={props.item.imageSrc} alt={props.item.imageAlt}/>
           </div>
           {/* Nombre producto */}
             <div>
@@ -24,13 +24,12 @@ function ItemDetail(props) {
 
             {/* Precio y botón para añadir */}
             <div>
-              <h2>Product information</h2>
               <p>{props.item.precio}</p>
-              <div>
-                <ItemCount stock={props.item.stock} mínimo={props.item.mínimo}/>
-              </div>
+                <div>
+                  <ItemCount stock={props.item.stock} mínimo={props.item.mínimo}/>
+                </div>
             </div>
-          </div>
+      </div>
   )
 }
 

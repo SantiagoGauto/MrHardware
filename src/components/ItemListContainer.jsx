@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import promise from "../utils/promise";
-import {PcListado} from "../utils/PcListado";
+import {PcListado} from "../utils/products";
 import ItemList from "./ItemList";
 import {useParams} from "react-router-dom";
 import "../scss/app.scss";
 
-export default function ItemListContainer() {
+function ItemListContainer() {
 
   const [products, setProducts] = useState([]);
   const {id} = useParams();
@@ -25,7 +25,7 @@ export default function ItemListContainer() {
 
 //diseño del loading cuando iniciamos la pagina.
   return (
-        products.length > 0 ? <ItemList items={products}/> :
+        products.length > 0 ? <ItemList item={products}/> :
         <div class="container">
           <div class="grid-big">
             <div class="cell-1"> </div>
@@ -57,3 +57,5 @@ export default function ItemListContainer() {
         </div>
   );
 }
+
+export default ItemListContainer;

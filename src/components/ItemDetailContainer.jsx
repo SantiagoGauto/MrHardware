@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import promise from "../utils/promise";
 import ItemDetail from "./ItemDetail";
-import {PcListado} from "../utils/PcListado";
+import {PcListado} from "../utils/products";
 import {useParams} from "react-router-dom";
 import "../scss/app.scss";
 
