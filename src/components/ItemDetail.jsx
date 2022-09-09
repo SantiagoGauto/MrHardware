@@ -20,15 +20,20 @@ function ItemDetail(props) {
 
               {/* Detalle: descripción */}
               <div>
-                <h3 className='des'>Detalles</h3>
+                <h3 className='des'>Componentes</h3>
                 <div>
-                  <p>{props.item.descripción}</p>
+                  <p>Procesador: {props.item.CPU}</p>
+                  <p>Memoria Ram: {props.item.RAM}</p>
+                  <p>Placa de video: {props.item.VideoCard}</p>
+                  <p>Placa madre: {props.item.MOTHERBOARD}</p>
+                  <p>Disco: {props.item.DISK}</p>
+                  <p>Fuente: {props.item.Fuente}</p>
                 </div>
               </div>
 
             {/* Precio y botón para añadir */}
             <div>
-              <p className='precio'>{props.item.precio}</p>
+              <p className='precio'>Total: {props.item.precio}</p>
               <ItemCount stock={props.item.stock} mínimo={props.item.mínimo}/>
             </div>
           </div>

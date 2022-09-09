@@ -39,7 +39,7 @@ function ItemCount(props) {
         <p className="contador">{countDetail}</p>
         <button className="ml-5 px-4 py-1.5 hover:bg-indigo-100 botón-count" onClick={increment}>+</button>
       </div>
-      <button className="btn btn-primary" type="button" onClick={addToCart}> Comprar ahora </button>
+      <button className="btn btn-primary btn_enviar" type="button" onClick={addToCart}> Comprar ahora </button>
     </div>
   );
 }

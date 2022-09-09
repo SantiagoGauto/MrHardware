@@ -90,7 +90,7 @@
 }
 
 button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
@@ -99,7 +99,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 
 .botón-count {
     background-color: #96d237;
-    border: outset #7c8f0c;
+    border: outset 2px #7c8f0c;
 }
 
 .row {
@@ -132,8 +132,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 }
 
 .contador {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 4px;
     margin-bottom: 0px;
 }
@@ -141,4 +141,23 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 .precio {
     font-size: 25px;
     color: #1c7fee;
+    margin-top: 10px;
+}
+
+.btn_enviar {
+    box-shadow: 0 8px 0 -5px #fff !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    margin-top: 10px !important;
+}
+
+.btn-primary {
+    --bs-btn-border-color: #fdad00 !important;
+    --bs-btn-bg: #d6960006 !important;
+    --bs-btn-hover-bg: #8a3e00 !important;
+    --bs-btn-hover-border-color: #ffffff !important;
+}
+
+p {
+    margin-bottom: 0 !important;
 }

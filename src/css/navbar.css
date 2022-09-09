@@ -37,5 +37,15 @@
 .navbar {
     --bs-navbar-padding-y: 0 !important;
     background-color: #070707 !important;
-    font-family: 'Chakra Petch', sans-serif;
+    box-shadow: #000000 0px 0px 15px 5px;
+}
+
+.navbar-brand {
+    font-family: 'Saira Stencil One', cursive;
+    margin-left: 20px;
+    text-shadow: 0px 1px 5px #000000;
+}
+
+.navbar-toggler {
+    border: #ffebcd00 !important;
 }
