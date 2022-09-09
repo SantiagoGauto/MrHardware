@@ -37,4 +37,5 @@
 .navbar {
     --bs-navbar-padding-y: 0 !important;
     background-color: #070707 !important;
+    font-family: 'Chakra Petch', sans-serif;
 }

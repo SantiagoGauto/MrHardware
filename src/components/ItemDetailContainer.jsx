@@ -16,36 +16,38 @@ function ItemDetailContainer() {
       .catch(err => console.log(err))
   }, [])
 
+  console.log(oneProduct)
+
 //diseño del loading cuando haces click en un producto.
   return (
     oneProduct ? <ItemDetail item={oneProduct}/> :
-      <div class="container">
-        <div class="grid-big">
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
-          <div class="cell-1"> </div>
+      <div className="container">
+        <div className="grid-big">
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
+          <div className="cell-1"> </div>
         </div>
       </div>
   )

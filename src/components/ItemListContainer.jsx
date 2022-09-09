@@ -26,33 +26,33 @@ function ItemListContainer() {
 //diseño del loading cuando iniciamos la pagina.
   return (
         products.length > 0 ? <ItemList item={products}/> :
-        <div class="container">
-          <div class="grid-big">
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
-            <div class="cell-1"> </div>
+        <div className="container">
+          <div className="grid-big">
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
+            <div className="cell-1"> </div>
           </div>
         </div>
   );

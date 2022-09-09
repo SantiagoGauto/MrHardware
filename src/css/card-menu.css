@@ -65,6 +65,7 @@
 .display {
     display: flex;
     margin: 5px;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .counter {
@@ -80,10 +81,64 @@
     justify-content: center;
 }
 
+.btn-group {
+    margin-bottom: 10px;
+}
+
 .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > .btn-group:not(:first-child) > .btn {
     padding-left: 17px;
 }
 
 button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    border-radius: 10px;
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
     margin: 0px;
+}
+
+.botón-count {
+    background-color: #96d237;
+    border: outset #7c8f0c;
+}
+
+.row {
+    box-shadow: #000000 0px 0px 15px 5px;
+    --bs-gutter-x: 0 !important;
+    margin-right: 110px !important;
+    margin-left: 110px !important;
+    margin-top: 80px !important;
+    background-color: #0000009e;
+    color: #ffffff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: groove 3px #d7d7d7;
+}
+
+.detalles {
+    margin: auto !important;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.nombre {
+    font-weight: 600;
+    font-size: 45px;
+    color: #ffbb00;
+}
+
+.des {
+    font-size: 30px;
+    color: #950000;
+}
+
+.contador {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.precio {
+    font-size: 25px;
+    color: #1c7fee;
 }

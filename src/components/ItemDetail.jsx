@@ -1,22 +1,26 @@
-import React, {useState} from 'react'
+import React from 'react'
 import ItemCount from "./ItemCount";
+import "../css/card-menu.css"
 
 function ItemDetail(props) {
 
   return (
-      <div>
+      <div className='row'>
+
       {/* Parte Imágenes */}
-          <div>
+          <div className='col'>
             <img src={props.item.imageSrc} alt={props.item.imageAlt}/>
           </div>
+
           {/* Nombre producto */}
+          <div className='col detalles'>
             <div>
-              <h1>{props.item.nombre}</h1>
+              <h1 className='nombre'>{props.item.nombre}</h1>
             </div>
 
               {/* Detalle: descripción */}
               <div>
-                <h3>Detalles</h3>
+                <h3 className='des'>Detalles</h3>
                 <div>
                   <p>{props.item.descripción}</p>
                 </div>
@@ -24,11 +28,11 @@ function ItemDetail(props) {
 
             {/* Precio y botón para añadir */}
             <div>
-              <p>{props.item.precio}</p>
-                <div>
-                  <ItemCount stock={props.item.stock} mínimo={props.item.mínimo}/>
-                </div>
+              <p className='precio'>{props.item.precio}</p>
+              <ItemCount stock={props.item.stock} mínimo={props.item.mínimo}/>
             </div>
+          </div>
+
       </div>
   )
 }

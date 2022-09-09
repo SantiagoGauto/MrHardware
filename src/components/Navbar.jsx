@@ -1,5 +1,6 @@
 import CartWidget from "./CartWidget";
 import "../css/navbar.css"
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
         return (
@@ -7,7 +8,7 @@ const NavBar = () => {
                 <header>
                 <nav className="navbar navbar-dark fixed-top rgb-navbar">
                     <div className="container-fluid">
-                            <a className="navbar-brand" href="#">MrHardware</a>
+                            <NavLink className="navbar-brand" to="/">MrHardware</NavLink>
                             <div className="flex-navbar">
                             <>
                             <CartWidget />
@@ -24,23 +25,13 @@ const NavBar = () => {
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                    <NavLink to="/category/Pc Section 1"> Pc Section 1 </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                    <a className="nav-link" href="#">Link</a>
+                                    <NavLink to="/category/Pc Section 2"> Pc Section 3 </NavLink>
                                     </li>
-                                    <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul className="dropdown-menu dropdown-menu-dark">
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                        <hr className="dropdown-divider" />
-                                        </li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                    <li className="nav-item">
+                                    <NavLink to="/category/Pc Section 3"> Pc Section 2 </NavLink>
                                     </li>
                                 </ul>
                             </div>

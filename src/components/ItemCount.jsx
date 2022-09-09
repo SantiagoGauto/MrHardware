@@ -35,11 +35,11 @@ function ItemCount(props) {
   return (
     <div>
       <div className="btn__container btn-group btn-group-toggle">
-        <button className="mr-5 px-4 py-1.5 hover:bg-indigo-100" onClick={decrement}>-</button>
-        Stock: {countDetail}
-        <button className="ml-5 px-4 py-1.5 hover:bg-indigo-100" onClick={increment}>+</button>
+        <button className="mr-5 px-4 py-1.5 hover:bg-indigo-100 botón-count" onClick={decrement}>-</button>
+        <p className="contador">{countDetail}</p>
+        <button className="ml-5 px-4 py-1.5 hover:bg-indigo-100 botón-count" onClick={increment}>+</button>
       </div>
-      <button className="btn btn-primary" type="button" onClick={addToCart}> Comprar </button>
+      <button className="btn btn-primary" type="button" onClick={addToCart}> Comprar ahora </button>
     </div>
   );
 }
