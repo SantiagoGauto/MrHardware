@@ -68,6 +68,11 @@
     font-family: 'Chakra Petch', sans-serif;
 }
 
+.flex {
+    display: flex;
+    margin: 7px 0px 3px 0px;
+}
+
 .counter {
     display: flex;
     flex-wrap: wrap;
@@ -144,18 +149,26 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     margin-top: 10px;
 }
 
+.stock {
+    font-size: 15px;
+    color: #514949;
+    margin-right: 5px;
+}
+
+.stock-numero {
+    font-size: 15px;
+    color: #c8d300;
+}
+
 .btn_enviar {
-    box-shadow: 0 8px 0 -5px #fff !important;
-    border-bottom-left-radius: 20px !important;
-    border-bottom-right-radius: 20px !important;
-    margin-top: 10px !important;
+    box-shadow: -2px 2px 0px 0px #9d6400 !important;
 }
 
 .btn-primary {
     --bs-btn-border-color: #fdad00 !important;
     --bs-btn-bg: #d6960006 !important;
     --bs-btn-hover-bg: #8a3e00 !important;
-    --bs-btn-hover-border-color: #ffffff !important;
+    --bs-btn-hover-border-color: #976a09 !important;
 }
 
 p {

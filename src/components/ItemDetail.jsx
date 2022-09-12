@@ -33,7 +33,10 @@ function ItemDetail(props) {
 
             {/* Precio y botón para añadir */}
             <div>
-              <p className='precio'>Total: {props.item.precio}</p>
+              <p className='precio'> Total: {props.item.precio}</p>
+              <div className='flex'>
+              <p className='stock'> Cantidad de Stock:</p><p className='stock-numero'>{props.item.stock}</p>
+              </div>
               <ItemCount stock={props.item.stock} mínimo={props.item.mínimo}/>
             </div>
           </div>

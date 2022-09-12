@@ -8,7 +8,7 @@ export const PcListado = [
   //carta 1
     {
       id: 1,
-      nombre: 'PC AMD RYZEN 5 3600',
+      nombre: 'PC AMD RYZEN 5 3600 4.2 Ghz',
       href: '#',
       imageSrc: PcComun1,
       imageAlt: "PcComun1",
@@ -16,6 +16,7 @@ export const PcListado = [
       rating: '★★★☆☆', //3 de rating
       mínimo: 1,
       stock: 5,
+      // categoryId
       categoryId: 1,
       category: {
         name: "AMD",
@@ -33,7 +34,7 @@ export const PcListado = [
   //carta 2
     {
       id: 2,
-      nombre: 'PC CORE I3',
+      nombre: 'PC Intel I3-10100F 4.3Ghz',
       href: '#',
       imageSrc: PcComun2,
       imageAlt: "PcComun2",
@@ -41,6 +42,7 @@ export const PcListado = [
       rating: '★★★★☆', //4 de rating
       mínimo: 1,
       stock: 3,
+      // categoryId
       categoryId: 2,
       category: {
         name: "INTEL",
@@ -57,7 +59,7 @@ export const PcListado = [
   //carta 3
     {
       id: 3,
-      nombre: 'PC AMD RYZEN 3',
+      nombre: 'PC AMD RYZEN 3 4350G 3.8 Ghz',
       href: '#',
       imageSrc: PcComun3,
       imageAlt: "PcComun3",
@@ -65,6 +67,7 @@ export const PcListado = [
       rating: '★★★★★', //5 de rating
       mínimo: 1,
       stock: 7,
+      // categoryId
       categoryId: 1,
       category: {
         name: "AMD",
@@ -81,7 +84,7 @@ export const PcListado = [
   //carta 4
     {
       id: 4,
-      nombre: 'PC INTEL CORE I5',
+      nombre: 'PC INTEL CORE I5-10400 4.3Ghz',
       href: '#',
       imageSrc: PcComun4,
       imageAlt: "PcComun4",
@@ -89,6 +92,7 @@ export const PcListado = [
       rating: '★★★☆☆', //3 de rating
       mínimo: 1,
       stock: 9,
+      // categoryId
       categoryId: 2,
       category: {
         name: "INTEL",
@@ -105,7 +109,7 @@ export const PcListado = [
   //carta 5
     {
       id: 5,
-      nombre: 'PC INTEL CORE I3',
+      nombre: 'PC INTEL CORE I3-10105F 4.4Ghz',
       href: '#',
       imageSrc: PcComun5,
       imageAlt: "PcComun5",
@@ -113,6 +117,7 @@ export const PcListado = [
       rating: '★★★★☆', //4 de rating
       mínimo: 1,
       stock: 3,
+      // categoryId
       categoryId: 2,
       category: {
         name: "INTEL",
