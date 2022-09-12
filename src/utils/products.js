@@ -16,6 +16,11 @@ export const PcListado = [
       rating: '★★★☆☆', //3 de rating
       mínimo: 1,
       stock: 5,
+      categoryId: 1,
+      category: {
+        name: "AMD",
+        id: 1
+      },
       // componentes
       CPU:"Micro AMD Ryzen 5 3600 4.2 Ghz AM4",
       RAM:"Memoria Ram Kingston 4GB 2666 Mhz DDR4",
@@ -36,6 +41,11 @@ export const PcListado = [
       rating: '★★★★☆', //4 de rating
       mínimo: 1,
       stock: 3,
+      categoryId: 2,
+      category: {
+        name: "INTEL",
+        id: 2
+      },
       // componentes
       CPU:"Micro Intel I3-10100F 4.3Ghz 6Mb S.1200",
       RAM:"Memoria Ram Kingston 4GB 2666 Mhz DDR4",
@@ -55,6 +65,11 @@ export const PcListado = [
       rating: '★★★★★', //5 de rating
       mínimo: 1,
       stock: 7,
+      categoryId: 1,
+      category: {
+        name: "AMD",
+        id: 1
+      },
       // componentes
       CPU:"Micro AMD Ryzen 3 4350G Pro 3.8 Ghz AM4 OEM",
       RAM:"Memoria Ram PNY Performance 4GB 2666 Mhz DDR4",
@@ -74,6 +89,11 @@ export const PcListado = [
       rating: '★★★☆☆', //3 de rating
       mínimo: 1,
       stock: 9,
+      categoryId: 2,
+      category: {
+        name: "INTEL",
+        id: 2
+      },
       // componentes
       CPU:"Micro Intel I5-10400 4.3Ghz 12Mb S.1200",
       RAM:"Memoria Ram Kingston 4GB 2666 Mhz DDR4",
@@ -93,6 +113,11 @@ export const PcListado = [
       rating: '★★★★☆', //4 de rating
       mínimo: 1,
       stock: 3,
+      categoryId: 2,
+      category: {
+        name: "INTEL",
+        id: 2
+      },
       // componentes
       CPU:"Micro Intel I3-10105F 4.4Ghz 6Mb S.1200",
       RAM:"Memoria Ram Patriot Signature Line 8GB 3200 Mhz DDR4",

@@ -99,16 +99,16 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 
 .botón-count {
     background-color: #96d237;
-    border: outset 2px #7c8f0c;
+    border: outset 1px #7c8f0c;
 }
 
 .row {
     box-shadow: #000000 0px 0px 15px 5px;
     --bs-gutter-x: 0 !important;
-    margin-right: 110px !important;
-    margin-left: 110px !important;
+    margin-right: 70px !important;
+    margin-left: 70px !important;
     margin-top: 80px !important;
-    background-color: #0000009e;
+    background-color: #000000c7;
     color: #ffffff;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;

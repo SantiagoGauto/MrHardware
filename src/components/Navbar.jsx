@@ -1,6 +1,7 @@
 import CartWidget from "./CartWidget";
 import "../css/navbar.css"
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
         return (
@@ -25,13 +26,10 @@ const NavBar = () => {
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li className="nav-item">
-                                    <NavLink to="/category/Pc Section 1"> Pc Section 1 </NavLink>
+                                    <Link to='/category/1'> <p> AMD </p> </Link>
                                     </li>
                                     <li className="nav-item">
-                                    <NavLink to="/category/Pc Section 2"> Pc Section 3 </NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                    <NavLink to="/category/Pc Section 3"> Pc Section 2 </NavLink>
+                                    <Link to='/category/2'> <p> INTEL </p> </Link>
                                     </li>
                                 </ul>
                             </div>
