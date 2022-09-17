@@ -1,11 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "../css/card-menu.css";
-// import Tilt from 'react-vanilla-tilt';
 
 function Item (props) {
   return (
-    // <Tilt>
         <Link className="card rgb" to={`/item/${props.id}`}>
           <div className="like"></div>
               <img src={props.imageSrc} alt={props.imageAlt} className="card-img-top"/>
@@ -19,7 +17,6 @@ function Item (props) {
               <p>{props.precio}</p>
             </div>
         </Link>
-    // </Tilt>
   );
 }
 

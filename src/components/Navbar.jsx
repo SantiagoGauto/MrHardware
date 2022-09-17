@@ -1,6 +1,5 @@
 import CartWidget from "./CartWidget";
 import "../css/navbar.css"
-import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -8,7 +7,7 @@ const NavBar = () => {
         <header>
             <nav class="navbar navbar-dark navbar-expand-lg fixed-top rgb-navbar">
                 <div class="container-fluid">
-                    <NavLink className="navbar-brand" to="/">MrHardware</NavLink>
+                    <Link className="navbar-brand" to="/">MrHardware</Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>

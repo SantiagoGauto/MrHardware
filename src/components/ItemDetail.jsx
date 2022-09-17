@@ -37,7 +37,7 @@ function ItemDetail(props) {
               <div className='flex'>
               <p className='stock'> Cantidad de Stock:</p><p className='stock-numero'>{props.item.stock}</p>
               </div>
-              <ItemCount stock={props.item.stock} mínimo={props.item.mínimo}/>
+              <ItemCount item={props.item}/>
             </div>
           </div>
 
