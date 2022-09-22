@@ -12,7 +12,7 @@ export const PcListado = [
       href: '#',
       imageSrc: PcComun1,
       imageAlt: "PcComun1",
-      precio: '$ 77.000',
+      precio: 77000,
       rating: '★★★☆☆', //3 de rating
       mínimo: 1,
       stock: 5,
@@ -38,7 +38,7 @@ export const PcListado = [
       href: '#',
       imageSrc: PcComun2,
       imageAlt: "PcComun2",
-      precio: '$ 77.000',
+      precio: 77000,
       rating: '★★★★☆', //4 de rating
       mínimo: 1,
       stock: 3,
@@ -63,7 +63,7 @@ export const PcListado = [
       href: '#',
       imageSrc: PcComun3,
       imageAlt: "PcComun3",
-      precio: '$ 77.000',
+      precio: 77000,
       rating: '★★★★★', //5 de rating
       mínimo: 1,
       stock: 7,
@@ -88,7 +88,7 @@ export const PcListado = [
       href: '#',
       imageSrc: PcComun4,
       imageAlt: "PcComun4",
-      precio: '$ 77.000',
+      precio: 77000,
       rating: '★★★☆☆', //3 de rating
       mínimo: 1,
       stock: 9,
@@ -113,7 +113,7 @@ export const PcListado = [
       href: '#',
       imageSrc: PcComun5,
       imageAlt: "PcComun5",
-      precio: '$ 77.000',
+      precio: 77000,
       rating: '★★★★☆', //4 de rating
       mínimo: 1,
       stock: 3,

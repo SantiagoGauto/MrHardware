@@ -31,10 +31,10 @@ function ItemCount({item}) {
   }
 
   //función de comprado en el carrito.
-  function onAdd(qty) {
+  function onAdd(quantity) {
     swal(`¡Se agregaron al carrito ${countDetail} unidades!`);
     setGoToCart(true);
-    ctx.addItem(item, qty);
+    ctx.addItem(item, quantity);
   }
 
   //diseño

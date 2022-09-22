@@ -1,5 +1,5 @@
 //Carrito de compras botón Navbar.
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
     return (

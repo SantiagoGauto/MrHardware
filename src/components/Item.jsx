@@ -14,7 +14,7 @@ function Item (props) {
                 </h3>
                 <div className="rating"> {props.rating} </div>
               </div>
-              <p>{props.precio}</p>
+              <p>${props.precio}</p>
             </div>
         </Link>
   );
