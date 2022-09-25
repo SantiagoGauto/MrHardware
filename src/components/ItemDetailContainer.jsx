@@ -1,9 +1,10 @@
 import {useEffect, useState} from "react";
 import promise from "../utils/promise";
 import ItemDetail from "./ItemDetail";
-import {PcListado} from "../utils/products";
 import {useParams} from "react-router-dom";
 import "../scss/app.scss";
+//Firebase:
+import { firestoreOneFetch } from "../utils/firebaseConfig"
 
 function ItemDetailContainer() {
 
@@ -11,10 +12,10 @@ function ItemDetailContainer() {
   const { id } = useParams();
 
   useEffect(() => {
-    promise(PcListado.filter(item => item.id == id))
-      .then(result => setOneProduct(result[0]))
+    promise(firestoreOneFetch(id))
+      .then(result => setOneProduct(result))
       .catch(err => console.log(err))
-  }, [])
+  }, [id])
 
   console.log(oneProduct)
 

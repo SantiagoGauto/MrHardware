@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react";
-import promise from "../utils/promise";
-import {PcListado} from "../utils/products";
 import ItemList from "./ItemList";
+import promise from "../utils/promise";
 import {useParams} from "react-router-dom";
 import "../scss/app.scss";
+//Firebase:
+import { firestoreFetch } from "../utils/firebaseConfig"
 
 function ItemListContainer() {
 
@@ -12,15 +13,9 @@ function ItemListContainer() {
   console.log(id)
 
   useEffect(() => {
-    if (id) {
-      promise(PcListado.filter(item => item.categoryId == id))
-        .then(result => setProducts(result))
-        .catch(err => console.log(err))
-    } else {
-      promise(PcListado)
-        .then(result => setProducts(result))
-        .catch(err => console.log(err))
-    }
+    promise(firestoreFetch(id))
+      .then(result => setProducts(result))
+      .catch(err => console.log(err))
   }, [id])
 
 //diseño del loading cuando iniciamos la pagina.
