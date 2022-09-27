@@ -42,12 +42,19 @@ const CartContextProvider = ({children}) => {
 		return cartList.reduce((prev, act) => prev + act.quantity * act.precio, 0);
 	};
 
-    // Costo Total
+    // Total de productos
 	const totalProducts = () =>
     cartList.reduce(
 			(acumulador, productoActual) => acumulador + productoActual.quantity,
 			0,
 		);
+
+    // Costo Total + envió ($1,200) = Total
+    const TotalEnvióPrice = () => 
+    cartList.reduce(
+        (envió, producto) => envió + producto.quantity * producto.precio,
+        1200,
+    );
 
     return (
         <CartContext.Provider value={{
@@ -57,6 +64,7 @@ const CartContextProvider = ({children}) => {
             clear,
             totalPrice,
 			totalProducts,
+            TotalEnvióPrice
         }}>
             {children}
         </CartContext.Provider>

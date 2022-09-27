@@ -168,17 +168,41 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     box-shadow: -2px 2px 0px 0px #9d6400 !important;
 }
 
+.bi-cart-fill {
+    width: 18px;
+    height: 18px;
+    color: #161616;
+}
+
 .btn_carrito {
     display: revert !important;
     box-shadow: -2px 2px 0px 0px #9d6400 !important;
 }
 
 .btn_build {
-    display: revert !important;
     filter: drop-shadow(0px 0px 5px #ffffff);
     background-color: #0000003d !important;
     border-radius: 35px !important;
     border-color: #38383847 !important;
+}
+
+.cantidad-numero {
+    position: absolute;
+    top: 0px;
+    left: 23px;
+    background-color: #ff1100;
+    border-radius: 50px;
+    width: 15px;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.cantidad-precio {
+    padding: 0px 0px 0px 7px !important;
+    color: #ffffff;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: 600;
+
 }
 
 .btn:hover {
@@ -294,6 +318,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     color: #ffffff !important;
     margin: 10px !important;
     text-shadow: 0px 1px 5px #000000;
+    --bs-btn-border-color: none !important;
 }
 
 .menos-productos {
@@ -301,6 +326,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     color: #ffffff !important;
     margin: 10px !important;
     text-shadow: 0px 1px 5px #000000;
+    --bs-btn-border-color: none !important;
 }
 
 .third {

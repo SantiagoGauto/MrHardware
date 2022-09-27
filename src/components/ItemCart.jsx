@@ -2,8 +2,6 @@ import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
 import React from "react";
-import Item from "./Item";
-import ItemCountCart from "./itemCountCart";
 
 const ItemCart = () => {
     const cartContext = useContext(CartContext);
@@ -63,6 +61,7 @@ const ItemCart = () => {
                                         <p>Cantidad: {product.quantity}</p>
                                         {/* subtotal del producto */}
                                         <p>Subtotal: ${product.quantity * product.precio}</p>
+                                        <p>Más envió ($1200): ${cartContext.TotalEnvióPrice()}</p>
                                     </div>
                                     {/* botón para borrar una lista del producto comprado */}
                                     <button className="borrar-producto" onClick={() => cartContext.removeItem(product.id)}>Borrar</button>
@@ -74,7 +73,7 @@ const ItemCart = () => {
             ))}
         <hr />
         {/* La suma total de TODOS los productos */}
-        <p className="Total-productos">Total: ${cartContext.totalPrice()}</p>
+        <p className="Total-productos">Total: ${cartContext.TotalEnvióPrice()}</p>
         </div>
         </>
     )
