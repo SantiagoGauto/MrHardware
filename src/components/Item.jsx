@@ -4,8 +4,7 @@ import "../css/card-menu.css";
 
 function Item (props) {
   return (
-        <Link className="card rgb" to={`/item/${props.id}`}>
-          <div className="like"></div>
+        <Link className="card rgb col d-flex justify-content-center" to={`/item/${props.id}`}>
               <img src={props.imageSrc} alt={props.imageAlt} className="card-img-top"/>
             <div className="card-body">
               <div>

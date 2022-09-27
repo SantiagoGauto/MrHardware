@@ -42,6 +42,6 @@ export const firestoreOneFetch = async (item) => {
     if (docSnap.exists()) {
         return {id: docSnap.id, ...docSnap.data()};
     } else {
-        console.log("No such document!");
+        console.log("No se encontraron los documentos!");
     }
 }

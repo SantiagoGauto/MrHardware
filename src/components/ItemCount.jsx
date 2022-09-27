@@ -8,7 +8,7 @@ import { CartContext } from "./CartContext";
 function ItemCount({item}) {
     const [countDetail, setCountDetail] = useState(1);
     const [goToCart, setGoToCart] = useState(false);
-    const ctx = useContext(CartContext);
+    const cartContext = useContext(CartContext);
 
   useEffect(() => {
     setCountDetail(item.mínimo)
@@ -34,7 +34,7 @@ function ItemCount({item}) {
   function onAdd(quantity) {
     swal(`¡Se agregaron al carrito ${countDetail} unidades!`);
     setGoToCart(true);
-    ctx.addItem(item, quantity);
+    cartContext.addItem(item, quantity);
   }
 
   //diseño
@@ -50,7 +50,16 @@ function ItemCount({item}) {
       <button className="btn btn-primary btn_enviar" type="button" onClick={() => onAdd(countDetail)}> Comprar ahora </button>
     </div>
     :
-    <Link to={'/cart'}> <button className="btn btn-primary btn_enviar" type="button"> Ver Carrito </button> </Link>
+    <>
+    <div className="compras">
+      <div className="ver-carrito">
+        <Link to={'/cart'}> <button className="btn btn-primary btn_carrito" type="button"> Ver Carrito </button> </Link>
+      </div>
+      <div className="seguir-carrito">
+        <Link to={'/'}> <button className="btn btn-primary btn_carrito" type="button"> Seguir con la compra 🛒 </button></Link>
+      </div>
+    </div>
+    </>
   );
 }
 

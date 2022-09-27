@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from './components/Navbar';
 import ItemCart from './components/ItemCart';
 import CartContextProvider from './components/CartContext';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/cart' element={<ItemCart />} />
       </Routes>
     </main>
+    <Footer />
     </CartContextProvider>
     </>
   );

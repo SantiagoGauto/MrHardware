@@ -1,28 +1,9 @@
 .card {
+    margin-bottom: 30px !important;
     margin: 10px;
     color: #000000 !important;
-    text-align: justify !important;
     --bs-card-title-spacer-y: 0 !important;
-    --bs-card-border-width: 0px !important;
     text-decoration-line: none
-}
-
-.like {
-    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/develop/slider-produtos-simples/assets/images/ic-heart.png);
-    height: 20px;
-    width: 20px;
-    background-size: 20px;
-    display: flex;
-    place-self: flex-end;
-    margin-bottom: 0.3rem;
-    margin-top: 0.3rem;
-    margin-right: 8px;
-    transition: 0.3s all ease;
-    cursor: pointer;
-}
-
-.like:hover {
-    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/develop/slider-produtos-simples/assets/images/ic-heart-red.png);
 }
 
 .rating {
@@ -62,8 +43,23 @@
     width: 18rem;
 }
 
-.display {
+.compras {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ver-carrito {
+    margin-right: 10px;
+}
+
+.seguir-carrito {
+    margin-left: 10px;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     margin: 5px;
     font-family: 'Chakra Petch', sans-serif;
 }
@@ -107,7 +103,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     border: outset 1px #7c8f0c;
 }
 
-.row {
+.row-detalles {
     box-shadow: #000000 0px 0px 15px 5px;
     --bs-gutter-x: 0 !important;
     margin-right: 70px !important;
@@ -120,9 +116,17 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     border: groove 3px #d7d7d7;
 }
 
+.img-detalles {
+    width: 90%;
+}
+
 .detalles {
     margin: auto !important;
     font-family: 'Chakra Petch', sans-serif;
+}
+
+.des-detalles {
+    font-size: 20px;
 }
 
 .nombre {
@@ -164,11 +168,204 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     box-shadow: -2px 2px 0px 0px #9d6400 !important;
 }
 
+.btn_carrito {
+    display: revert !important;
+    box-shadow: -2px 2px 0px 0px #9d6400 !important;
+}
+
+.btn_build {
+    display: revert !important;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    background-color: #0000003d !important;
+    border-radius: 35px !important;
+    border-color: #38383847 !important;
+}
+
+.btn:hover {
+    color: #1b1b1b;
+
+}
+
 .btn-primary {
     --bs-btn-border-color: #fdad00 !important;
     --bs-btn-bg: #d6960006 !important;
     --bs-btn-hover-bg: #8a3e00 !important;
     --bs-btn-hover-border-color: #976a09 !important;
+}
+
+.carrito-vacío {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 60px;
+    width: 100%;
+    height: 100vh;
+}
+
+.alerta-vació {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    color: #f5f5f5;
+    text-shadow: 0px 1px 20px #000000;
+}
+
+.bi-emoji-frown {
+    width: 60px;
+    height: 60px;
+    color: #000000;
+    filter: drop-shadow(0px 1px 3px #000000);
+}
+
+.alerta-vació-productos {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+    color: #5a5a5a;
+    text-shadow: 0px 1px 5px #000000;
+}
+
+.hacer-compra {
+    font-family: 'Chakra Petch', sans-serif;
+    display: revert !important;
+    background-color: #1c0f05;
+    border: outset 2px #b36402;
+    border-radius: 50px !important;
+    color: #913300;
+    padding: 0px 30px;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 5px #000000;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.hacer-compra:hover {
+    -webkit-animation: pulsate 1s ease-in-out;
+    animation: pulsate 1s ease-in-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes
+	pulsate {
+		0%{
+        box-shadow: 0 0 15px #56250294, 0 0 25px #6f440d;
+		background-color: #602800c0;
+	}
+}
+
+.compra-carrito {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    filter: drop-shadow(0px 0px 2px #000000);
+}
+
+.swal-modal {
+    background-color: #3b3ba1;
+    border-radius: 40px;
+    box-shadow: #16164a 0px 0px 10px 10px;
+}
+
+.swal-text {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Chakra Petch', sans-serif;
+    text-shadow: 0px 1px 5px #000000;
+}
+
+.mas-menos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-carrito {
+    min-height: 80vh;
+}
+
+.mas-productos {
+    display: revert !important;
+    font-family: 'Chakra Petch', sans-serif !important;
+    color: #ffffff !important;
+    margin: 10px !important;
+    text-shadow: 0px 1px 5px #000000;
+}
+
+.menos-productos {
+    font-family: 'Chakra Petch', sans-serif !important;
+    color: #ffffff !important;
+    margin: 10px !important;
+    text-shadow: 0px 1px 5px #000000;
+}
+
+.third {
+    border-color: #2637b8;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #2637b8 inset, 0 0 0 0 #2637b8;
+    transition: all 150ms ease-in-out;
+    }
+    
+    .third:hover {
+    box-shadow: 0 0 10px 0 #2637b8 inset, 0 0 10px 4px #2637b8;
+    }
+
+.third-clear {
+    border-color: #b11616;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #b11616 inset, 0 0 0 0 #b11616;
+    transition: all 150ms ease-in-out;
+    }
+    
+    .third-clear:hover {
+    box-shadow: 0 0 10px 0 #b11616 inset, 0 0 10px 4px #b11616;
+    }
+
+.card-producto {
+    margin: 20px;
+    max-width: 1090px;
+}
+
+.img-producto {
+    max-width: 75% !important;
+}
+
+.h3-productos {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Saira Stencil One', cursive;
+    margin-bottom: 20px;
+}
+
+.detalles-producto {
+    font-family: 'Chakra Petch', sans-serif;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.borrar-producto {
+    padding: 1px 10px;
+    text-align: left;
+    text-indent: inherit;
+    color: #fff;
+    background-color: #030a10;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 5px;
+}
+
+.Total-productos {
+    margin: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 0px 1px 5px #000000;
 }
 
 p {

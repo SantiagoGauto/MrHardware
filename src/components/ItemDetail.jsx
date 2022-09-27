@@ -5,11 +5,11 @@ import "../css/card-menu.css"
 function ItemDetail(props) {
 
   return (
-      <div className='row'>
+      <div className='row d-flex justify-content-center row-detalles'>
 
       {/* Parte Imágenes */}
           <div className='col'>
-            <img src={props.item.imageSrc} alt={props.item.imageAlt}/>
+            <img className='img-detalles' src={props.item.imageSrc} alt={props.item.imageAlt}/>
           </div>
 
           {/* Nombre producto */}
@@ -21,7 +21,7 @@ function ItemDetail(props) {
               {/* Detalle: descripción */}
               <div>
                 <h3 className='des'>Componentes</h3>
-                <div>
+                <div className='des-detalles'>
                   <p>Procesador: {props.item.CPU}</p>
                   <p>Memoria Ram: {props.item.RAM}</p>
                   <p>Placa de video: {props.item.VideoCard}</p>
