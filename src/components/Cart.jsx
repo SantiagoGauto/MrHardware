@@ -1,10 +1,55 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
+// uso de SweetAlert para las alertas de los productos en stock.
+import swal from 'sweetalert';
 import React from "react";
+import {doc, collection, setDoc, serverTimestamp, updateDoc, increment} from 'firebase/firestore';
+import {db} from '../utils/firebaseConfig';
 
-const ItemCart = () => {
+const Cart = () => {
     const cartContext = useContext(CartContext);
+
+    //orden de compra.
+    const createOrder = () => {
+        let itemsForDB = cartContext.cartList.map(item => ({
+            id: item.id,
+            title: item.nombre,
+            price: item.precio,
+            qty: item.quantity
+        }))
+        let order = {
+            buyer: {
+                name: 'Santiago Gauto',
+                email: 'santiago.delgauto@gmail.com',
+                phone: '123456789'
+            },
+            date: serverTimestamp(),
+            items: itemsForDB,
+            total: cartContext.TotalEnvióPrice()
+        }
+            //crear la orden de compra en la base de datos.
+        const createOrderInFirestore = async () => {
+            const newOrderRef = doc(collection(db, "orders"));
+            await setDoc(newOrderRef, order);
+            return newOrderRef;
+        }
+        createOrderInFirestore()
+        .then(result => {
+            swal('su orden de compra fue creada con éxito!' + result.id)
+            //a la hora de hacer la compra final, se actualice el stock:
+        cartContext.cartList.forEach(async(item) => {
+            const itemRef = doc(db, "products", item.id);
+            await updateDoc(itemRef, {
+                stock: increment(-item.quantity)
+            });
+        })
+        //a la hora de hacer la compra final, se borra el carrito:
+        cartContext.clear()
+        })
+        .catch(err => console.log(err))
+    }
+
 
     //función cuando el carrito esta vació.
     if (cartContext.cartList.length === 0) {
@@ -74,9 +119,10 @@ const ItemCart = () => {
         <hr />
         {/* La suma total de TODOS los productos */}
         <p className="Total-productos">Total: ${cartContext.TotalEnvióPrice()}</p>
+        <button onClick={createOrder}>Checkout Now</button>
         </div>
         </>
     )
 }
 
-export default ItemCart;
+export default Cart;

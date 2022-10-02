@@ -179,6 +179,18 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     box-shadow: -2px 2px 0px 0px #9d6400 !important;
 }
 
+.btn:disabled {
+    display: flex;
+    box-shadow: -2px 2px 0px 0px #393939 !important;
+    --bs-btn-padding-x: 0.75rem !important;
+    --bs-btn-padding-y: 0.375rem !important;
+    border-radius: 15px;
+    padding: 6px 12px !important;
+    --bs-btn-font-size: 1rem !important;
+    --bs-btn-font-weight: 400 !important;
+    --bs-btn-line-height: 1.5 !important;
+}
+
 .btn_build {
     filter: drop-shadow(0px 0px 5px #ffffff);
     background-color: #0000003d !important;
