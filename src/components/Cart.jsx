@@ -36,7 +36,7 @@ const Cart = () => {
         }
         createOrderInFirestore()
         .then(result => {
-            swal('su orden de compra fue creada con éxito!' + result.id)
+            swal('¡su orden de compra fue creada con éxito! = ' + result.id)
             //a la hora de hacer la compra final, se actualice el stock:
         cartContext.cartList.forEach(async(item) => {
             const itemRef = doc(db, "products", item.id);
@@ -119,7 +119,7 @@ const Cart = () => {
         <hr />
         {/* La suma total de TODOS los productos */}
         <p className="Total-productos">Total: ${cartContext.TotalEnvióPrice()}</p>
-        <button onClick={createOrder}>Checkout Now</button>
+        <button className="btn buy Total-compra" onClick={createOrder}>Hacer compra</button>
         </div>
         </>
     )

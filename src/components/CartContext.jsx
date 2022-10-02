@@ -13,9 +13,9 @@ const CartContextProvider = ({children}) => {
 		if (isInCart(item.id)) {
 			setCartList(
 				cartList.map((product) => {
-					return product.id === item.id
+					return product.id !== item.id
 						? { ...product, quantity: product.quantity + quantity }
-						: product;
+						: product; 
 				}),
 			);
 		} else {
