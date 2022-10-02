@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# MrHardware (2022)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pagina e-commerce de computadoras AMD y Intel.
 
 ## Available Scripts
 
