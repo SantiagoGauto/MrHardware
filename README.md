@@ -22,5 +22,17 @@ Iniciar proyecto usando npm:
     git clone
     cd the-clone
     npm install 
-    npm start 
+    npm start
 
+## Erramientas Utilizadas
+
+    React.js
+    React-router-DOM
+    Firebase y Firestore
+    HTML
+    CSS
+    SASS
+    JavaScript
+    Bootstrap
+    Bootstrap-icons
+    SweetAlert 2
