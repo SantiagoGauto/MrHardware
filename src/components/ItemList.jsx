@@ -1,6 +1,7 @@
 import React from "react";
 import Item from "./Item";
 import "../css/card-menu.css"
+import CarouselBackground from "./CarouselBackground";
 
 function ItemList(props) {
 
@@ -8,6 +9,8 @@ function ItemList(props) {
 
 //llamado con props al PcListado
   return(
+    <>
+    <CarouselBackground />
       <div className="display">
           {item.map((item) => (
             <Item
@@ -23,6 +26,7 @@ function ItemList(props) {
             />
           ))}
       </div>
+    </>
   );
 }
 

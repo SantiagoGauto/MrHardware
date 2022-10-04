@@ -41,7 +41,7 @@ function ItemCount({item}) {
   return (
     goToCart === false
     ?
-    <div>
+    <div className="carrito-compras">
       <div className="btn__container btn-group btn-group-toggle">
         <button className="mr-5 px-4 py-1.5 hover:bg-indigo-100 botón-count" onClick={decrement}>-</button>
         <p className="contador">{countDetail}</p>
