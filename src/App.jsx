@@ -1,8 +1,4 @@
-//uso de css
-import './App.css'
-//uso de scss
-import './scss/app.scss'
-
+import './App.css';
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import { Route, Routes } from "react-router-dom";

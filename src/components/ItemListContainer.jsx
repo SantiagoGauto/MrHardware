@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import ItemList from "./ItemList";
 import promise from "../utils/promise";
 import {useParams} from "react-router-dom";
-import "../scss/app.scss";
+import "../css/loading.css";
 //Firebase:
 import { firestoreFetch } from "../utils/firebaseConfig"
 
