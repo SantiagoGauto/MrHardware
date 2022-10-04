@@ -20,7 +20,7 @@ function App() {
       {/* Route Components */}
       <Routes>
         {/* ItemListContainer */}
-        <Route path="/" element={<ItemListContainer />} />
+        <Route path="*" element={<ItemListContainer />} />
         <Route path="/category/:id" element={<ItemListContainer />} />
         {/* ItemDetailContainer */}
         <Route path="/item/:id" element={<ItemDetailContainer />} />
